@@ -1,16 +1,19 @@
 class Units {
 
   constructor() {
-    this.age = 20;
-    this.isWounded = false;
-    this.isDead = false;
+    this.life = setTimeout(()=>{
+      this.isWounded_ = false;
+      this.isDead_ = false;
+    },1000);
   }
 
-  get status() {
-    return this.status_;
+  get isWounded(){
+    return this.isWounded_;
   }
 
+  get isDead(){
+    return this.isDead_
+  }
 
 }
-
 module.exports = {Units};

@@ -1,4 +1,4 @@
-const {City} = require('./app/city');
+const {City} = require('./city');
 
 //let Zeus = new Divinity;
 let paris = new City();

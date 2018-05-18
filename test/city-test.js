@@ -12,6 +12,7 @@ describe('city.js',()=>{
     before(() => {
       athene = new City();
       athene.init();
+
     });
 
     after(()=>{
