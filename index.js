@@ -1,30 +1,17 @@
-import City from 'city';
-import Divinity from 'divinity';
+const {City} = require('./app/city');
 
-Athene = new City;
-Zeus = new Divinity;
+//let Zeus = new Divinity;
+let paris = new City();
+console.log(paris.corn);
+//Zeus.init();
 
-Zeus.init();
+//death = false;
+//while (death  = false) {
 
-/*
-* No need city init
-*
-* Faire un while et un menu / interface à l'interieur ?
-*
-* Ne lancer le divinity init qu'une fois dans le while ?
-*
-* religion.js = setInterval qui augmente un facteur multiplicateur des effets de la divinité
-* --> Différence de cultes donc niveau de religion pour chaque dieux ?
-*
-* science.js = Réfléchir au concept :
-* - Achat de science via l'or ?
-* - Gain de science auto ?
-* */
+  console.log("- - - - - Welcome to the menu - - - - - ");
+  console.log("- - - -What's your next action ?- - - - ");
 
-
-while (cond = true) {
-  // Interfaaaaaaace
-}
+//}
 
 
 
