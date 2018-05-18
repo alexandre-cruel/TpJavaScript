@@ -7,8 +7,28 @@ chai.should();
 
 describe('city.js',()=>{
   describe('tradingCorn', () => {
-    let g;
+    let athene;
 
+    before(() => {
+      athene = new City();
+      athene.init();
+    });
+
+    after(()=>{
+      athene.deleteCity()
+    });
+
+    it('should have added corn', async () => {
+
+      await new Promise((resolve, reject) => {
+        athene.buyCorn(10).on('achat',achat => {
+          achat.corn.should.be.equal(10);
+          achat.corn.should.be.equal(90);
+          resolve();
+        })
+      })
+    });
   })
-})
+});
+
 

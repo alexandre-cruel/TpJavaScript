@@ -7,7 +7,7 @@ class City {
     this.corn_ = 100;
     this.gold_ = 0;
     this.units = [];
-    this.timeFactor_ = 365; // 1 an
+    this.divinity = new Divinity(Zeus,365);
   }
 
   init(){
@@ -92,7 +92,7 @@ class City {
             } else {
               this.gold = this.gold - 100;
               this.corn = this.corn - 50;
-              this.units.push(new Units);
+              this.units.push(new Units); // Es ce que ça marche ?
             }
           } //Petit test pour voir si ça à bien marché à base de check de status
         },this.timeFactor * Math.random() * 0.001 * qtyOfUnits);
@@ -103,6 +103,10 @@ class City {
         ));
       }
     });
+  }
+
+  war(opponent){
+
   }
 
   deleteCity(){
