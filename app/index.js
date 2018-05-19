@@ -11,6 +11,7 @@ console.log(paris.corn);
   console.log("- - - - - Welcome to the menu - - - - - ");
   console.log("- - - -What's your next action ?- - - - ");
 
+  // TODO Gerer les entrées clavier.
 //}
 
 

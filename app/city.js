@@ -2,13 +2,13 @@ const {Divinity} = require('../app/divinity');
 const {Units} = require('../app/units');
 
 class City {
-
   constructor(cityName) {
     this.name_ = cityName;
     this.corn_ = 100;
     this.gold_ = 0;
     this.units = [];
     this.divinity = new Divinity('Zeus');
+    this.nbChurch = 0;
   }
 
   init() {
@@ -105,30 +105,31 @@ class City {
       }
     });
   }
+  // - - - - - - - - - - B U I L D I N G S  - - - - - - - - - - - - - - - - -
+  buyChurch() {
+      if (this.gold >= 350) {
+        setTimeout(()=> {
+          this.nbChurch++; // Todo le nombre d'eglise boost la production de la ville
+        },this.divinity.timeFactor * Math.random());
+      } else {
+        console.log('You don\'t have enough gold to buy a church');
+      }
+  }
   // - - - - - - - - - - C O M B A T S - - - - - - - - - - - - - - - - - - - -
   war(opponent){
     return new Promise((resolve, reject) => {
       if (typeof opponent === 'number'){
         //TODO Si puissance inférieure on ne peut pas attaquer
         setTimeout(()=>{
-          this.units.forEach(/*TODO trouver un moyen d'inclure fight*/)
+          this.units.forEach(this.units.fight());
         }, this.divinity.timeFactor * Math.random()*4000 + 2000);
       }
-
+      this.clearDeadUnits();
     })
   }
 
-  fight(){ //TODO un schéma pour mieux comprendre comment faire fonctionner ça
-    a = Math.random();
-    if (a >= 0.8) {
-      //TODO il est encore vivant
-    } else
-      if (a >= 0.4) {
-        this.units.isWounded_=true;
-      }
-      else {
-      this.units.isDead_ = true;
-      }
+  clearDeadUnits() {
+    this.units = this.units.filter(this.units.isDead_ == false);
   }
   // - - - - - - - - - - D E L E T E C I T Y - - - - - - - - - - - - - - - - -
   deleteCity(){

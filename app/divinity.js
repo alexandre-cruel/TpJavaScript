@@ -1,6 +1,5 @@
 const EventEmitter = require('events');
 
-
 class Divinity {
   constructor(name, timeFactor) {
     this.name_ = name || 'UNKDIVINITY';
@@ -84,5 +83,4 @@ class Divinity {
     clearInterval(this.gaiaInterval_);
   }
 }
-
 module.exports = {Divinity};

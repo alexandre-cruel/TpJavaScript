@@ -5,7 +5,6 @@ const {Divinity} = require('../app/divinity');
 chai.use(chaiAsPromised);
 chai.should();
 
-
 describe('world-worldEvents_.js', () => {
   describe('worldEvents', () => {
     let g;
