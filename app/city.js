@@ -123,8 +123,10 @@ class City {
         setTimeout(()=>{
           this.units.forEach(this.units.fight());
         }, this.divinity.timeFactor * Math.random()*4000 + 2000);
+        this.clearDeadUnits();
+      } else {
+        reject(new Error(`Erreur : ${opponent} isn't à number`));
       }
-      this.clearDeadUnits();
     })
   }
 
