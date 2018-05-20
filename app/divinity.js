@@ -16,12 +16,11 @@ class Divinity {
         gold: Math.floor(this.gold * 0.1)
       });
 
-      if (Math.random() > 0) {
+      if (Math.random() > 0.95) {
         this.worldEvents.emit('blessing', {
           corn: 100 * this.corn,
-          gold: 100 * this.gold,
+          gold: 100 * this.gold
         });
-        console.log('I was there')
       }
 
       if (Math.random() > 0.99) {

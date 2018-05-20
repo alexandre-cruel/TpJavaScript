@@ -22,6 +22,5 @@ class Units {
       this.isDead_ = true;
     }
   }
-  // TODO mort naturelle
 }
 module.exports = {Units};
