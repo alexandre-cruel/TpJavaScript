@@ -6,21 +6,22 @@ class Divinity {
     this.corn_ = 0;
     this.gold_ = 0;
     this.worldEvents_ = new EventEmitter();
-    this.timeFactor_ = timeFactor || 1000;
+    this.timeFactor_ = timeFactor || 10000;
   }
 
   init() {
     this.gaiaInterval_ = setInterval(() => {
       this.worldEvents.emit('favor', {
-        corn: Math.floor(this.corn * 0.1),
+        corn: Math.floor(this.corn * 2),
         gold: Math.floor(this.gold * 0.1)
       });
 
-      if (Math.random() > 0.95) {
+      if (Math.random() > 0) {
         this.worldEvents.emit('blessing', {
           corn: 100 * this.corn,
-          gold: 100 * this.gold
+          gold: 100 * this.gold,
         });
+        console.log('I was there')
       }
 
       if (Math.random() > 0.99) {

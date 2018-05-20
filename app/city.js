@@ -2,19 +2,23 @@ const {Divinity} = require('../app/divinity');
 const {Units} = require('../app/units');
 
 class City {
-  constructor(cityName) {
-    this.name_ = cityName;
+  constructor(cityName,divinityName) {
+    this.name_ = cityName || 'UNKWNCITY';
     this.corn_ = 100;
     this.gold_ = 0;
     this.units = [];
-    this.divinity = new Divinity('Zeus');
+    this.divinity = new Divinity(divinityName);
     this.nbChurch = 0;
   }
 
   init() {
+    this.divinity.init();
     this.cityInterval_ = setInterval(() => {
-
-    }, this.timeFactor);
+      this.divinity.corn_ = this.divinity.corn + 1000;
+      this.divinity.gold_ = this.divinity.gold + 1000;
+      console.log(this.divinity.gold);
+      console.log(this.divinity.corn);
+    }, this.divinity.timeFactor);
   }
   // - - - - - - - - - - G E T T E R S - - - - - - - - - - - - - - - - - - - -
 
@@ -36,12 +40,12 @@ class City {
       if (typeof amntOfCorn === 'number') {
         setTimeout(() => {
           if (Math.random() < 0.70) {
-            this.gold = (this.gold + 1.25) * amntOfCorn;
+            this.divinity.gold_ = (this.divinity.gold_ + 1.25) * amntOfCorn;
             console.log(
               `Your trader has done a great job you earn ${1.25 *
               amntOfCorn} gold ! `)
           } else {
-            this.corn = this.corn - amntOfCorn;
+            this.divinity.corn_ = this.divinity.corn_ - amntOfCorn;
             console.log(
               `Your trader has been killed on his way back home, you've lost ${
                 amntOfCorn} corn ! `);
@@ -95,7 +99,7 @@ class City {
               this.corn = this.corn - 50;
               this.units.push(new Units());
             }
-          } //Petit test pour voir si ça à bien marché à base de check de status
+          }
         },this.divinity.timeFactor * 0.001 * qtyOfUnits);
       } else {
         reject(new Error(

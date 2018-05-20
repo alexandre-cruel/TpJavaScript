@@ -3,7 +3,7 @@ class Units {
     this.life = setTimeout(() => {
       this.isWounded_ = false;
       this.isDead_ = false;
-    }, 1000);
+    }, 600000);
   }
 
   get isWounded() {
