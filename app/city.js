@@ -13,10 +13,8 @@ class City {
   init() {
     this.divinity.init();
     this.cityInterval_ = setInterval(() => {
-      this.divinity.corn_ = this.divinity.corn + 100 * (1 + this.nbChurch);
-      this.divinity.gold_ = this.divinity.gold + 100 * (1 + this.nbChurch);
-      // console.log(this.divinity.gold);
-      // console.log(this.divinity.corn);
+      this.divinity.corn_ = (this.divinity.corn + 100) * (1 + this.nbChurch);
+      this.divinity.gold_ = (this.divinity.gold + 100) * (1 + this.nbChurch);
     }, this.divinity.timeFactor);
   }
   // - - - - - - - - - - G E T T E R S - - - - - - - - - - - - - - - - - - - -
@@ -93,7 +91,7 @@ class City {
               this.units.push(new Units());
             }
           }
-          console.log(`You've just create ${qtyOfUnits} units`)
+          console.log(`You've just create ${qtyOfUnits} units`);
         }, this.divinity.timeFactor * 0.001 * qtyOfUnits);
       } else {
         reject(new Error(

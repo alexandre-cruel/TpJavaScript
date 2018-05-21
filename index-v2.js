@@ -2,12 +2,10 @@ const prompt = require('node-ask').prompt;
 const confirm = require('node-ask').confirm;
 const {City} = require('./app/city');
 
-const game = async (city1) => {
-
+const game = async city1 => {
   let death = false;
 
   while (!death) {
-
     console.log('- - - - -  - - M E N U - - - - - - - - ');
     console.log('- - - -What\'s your next action ?- - - - ');
     console.log(' \t--> 1 : Sell some Corn ');
@@ -77,6 +75,7 @@ const game = async (city1) => {
           case '6':
             console.log(`This is the end`);
             city1.deleteCity();
+            death = true;
             break;
           default:
             console.log('Wrong choice, earth collapsed');
@@ -87,10 +86,10 @@ const game = async (city1) => {
   }
 };
 
-const main = async() => {
+const main = async () => {
   const city1 = new City();
   city1.init();
   await game(city1);
-}
+};
 
 main();
