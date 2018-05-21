@@ -1,7 +1,8 @@
-<h1> Seven Wonder in JS ! </h1>
+<h1> Seven Wonder in JS </h1>
 
 <p>Our goal was to create a game in which you can manage a city, it ressources 
-corn and gold )and it units. There were <em>three</em> main things to focus on :
+( corn and gold )and it units. There were <strong>three</strong> main things to focus on :
+
 </p>
 
 
