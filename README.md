@@ -15,6 +15,7 @@
     * The city
     * The divinity
     * The units
+    * The church
     * Tradings
   * Check the code style  [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
   * Dev team
@@ -48,6 +49,12 @@ resources or punish your city (beware of sinners).
 <strong>The units</strong> are the military force of your city. Keep enough 
 troops may be a good idea if you don't wan't to die in the early game. 
 
+
+<h4>Church</h4>                                                         
+                                                                           
+<strong>Churches </strong> are meant to boost the production of the city. 
+The more church you have, the more ressources you produce each years.    
+
 <h4>Tradings</h4>
 
 <strong>Tradings</strong> are a very powerful way to increase your ressources. 
@@ -57,7 +64,7 @@ things get complicated
 
 <h3>Code style </h3>
 
-In this project we've used a linter called XO.[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo) 
+In this project we've used a linter called XO. 
 It checks if the code is correctly indented and is perfectly readable. 
 
 You can check it by yourself using the following command in the terminal : 
