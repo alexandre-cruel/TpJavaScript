@@ -21,6 +21,14 @@ class City {
   }
   // - - - - - - - - - - G E T T E R S - - - - - - - - - - - - - - - - - - - -
 
+  get gold() {
+    return this.divinity.gold;
+  }
+
+  get corn() {
+    return this.divinity.corn;
+  }
+
   get name() {
     return this.name_;
   }
