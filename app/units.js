@@ -22,5 +22,6 @@ class Units {
       this.isDead_ = true;
     }
   }
+
 }
 module.exports = {Units};

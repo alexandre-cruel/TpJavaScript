@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1ae636d-a137-4641-8b1c-578c5f469a5b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/city.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/city.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/divinity.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/divinity.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/units.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/units.js" afterDir="false" />
     </list>
@@ -36,8 +34,8 @@
           <file leaf-file-name="city.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/city.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="702">
-                  <caret line="139" selection-start-line="139" selection-end-line="139" />
+                <state relative-caret-position="792">
+                  <caret line="112" column="45" selection-start-line="112" selection-start-column="45" selection-end-line="112" selection-end-column="45" />
                 </state>
               </provider>
             </entry>
@@ -46,11 +44,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+                <state relative-caret-position="668">
+                  <caret line="83" column="3" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
                 </state>
               </provider>
             </entry>
@@ -64,11 +62,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="units.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="units.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/units.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="24" selection-start-line="24" selection-end-line="24" />
+                <state relative-caret-position="405">
+                  <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
                 </state>
               </provider>
             </entry>
@@ -111,10 +109,10 @@
         <option value="$PROJECT_DIR$/node_modules/aaaaTEST.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/index.js" />
-        <option value="$PROJECT_DIR$/app/units.js" />
         <option value="$PROJECT_DIR$/app/divinity.js" />
         <option value="$PROJECT_DIR$/app/city.js" />
+        <option value="$PROJECT_DIR$/app/units.js" />
+        <option value="$PROJECT_DIR$/app/index.js" />
       </list>
     </option>
   </component>
@@ -133,10 +131,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="373" />
-    <option name="y" value="-1249" />
-    <option name="width" value="1391" />
-    <option name="height" value="878" />
+    <option name="x" value="-232" />
+    <option name="y" value="-1418" />
+    <option name="width" value="2560" />
+    <option name="height" value="1418" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -250,7 +248,7 @@
       <workItem from="1525265045058" duration="289000" />
       <workItem from="1525420444510" duration="35000" />
       <workItem from="1526539634650" duration="11808000" />
-      <workItem from="1526653093362" duration="26253000" />
+      <workItem from="1526653093362" duration="28230000" />
     </task>
     <servers />
   </component>
@@ -266,7 +264,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38385000" />
+    <option name="totallyTimeSpent" value="40362000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -279,12 +277,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-232" y="-1418" width="2560" height="1418" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49835256" visible="true" weight="0.1508468" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.08099924" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007299" side_tool="true" weight="0.368758" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329296" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3290653" />
       <window_info anchor="bottom" id="Run" order="5" weight="0.28160486" />
       <window_info id="Structure" order="1" sideWeight="0.5019084" side_tool="true" weight="0.25328466" />
@@ -416,20 +415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/units.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/divinity.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -444,10 +429,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/units.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/city.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="139" selection-start-line="139" selection-end-line="139" />
+        <state relative-caret-position="792">
+          <caret line="112" column="45" selection-start-line="112" selection-start-column="45" selection-end-line="112" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="83" column="3" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
         </state>
       </provider>
     </entry>
