@@ -13,8 +13,8 @@ class City {
   init() {
     this.divinity.init();
     this.cityInterval_ = setInterval(() => {
-      this.divinity.corn_ = this.divinity.corn + 1000;
-      this.divinity.gold_ = this.divinity.gold + 1000;
+      this.divinity.corn_ = this.divinity.corn + 100 * (1 + this.nbChurch);
+      this.divinity.gold_ = this.divinity.gold + 100 * (1 + this.nbChurch);
       // console.log(this.divinity.gold);
       // console.log(this.divinity.corn);
     }, this.divinity.timeFactor);
@@ -57,13 +57,13 @@ class City {
     });
   }
 
-  buyCorn(amntOfGold) { // TODO Check on a pas assé de ressources
+  buyCorn(amntOfGold) {
     return new Promise((resolve, reject) => {
       if (typeof amntOfGold === 'number') {
         setTimeout(() => {
           if (Math.random() < 0.85) {
             this.divinity.corn_ = this.divinity.corn + (0.9 * amntOfGold);
-            console.log(`Everything is fine`);
+            console.log(`You've earn ${0.9 * amntOfGold} corn`);
           } else {
             this.divinity.gold_ = this.divinity.gold - amntOfGold;
             console.log(`Crap ! You've lost ${amntOfGold} gold`);
@@ -93,6 +93,7 @@ class City {
               this.units.push(new Units());
             }
           }
+          console.log(`You've just create ${qtyOfUnits} units`)
         }, this.divinity.timeFactor * 0.001 * qtyOfUnits);
       } else {
         reject(new Error(
@@ -103,7 +104,6 @@ class City {
     });
   }
   // - - - - - - - - - - B U I L D I N G S  - - - - - - - - - - - - - - - - -
-  // Todo le nombre d'eglise boost la production de la ville
 
   buyChurch(qtyToBuild) {
     if (this.divinity.gold >= 350 * qtyToBuild) {
@@ -120,7 +120,6 @@ class City {
   war(opponent) {
     return new Promise((resolve, reject) => {
       if (typeof opponent === 'number') {
-        // TODO Si puissance inférieure on ne peut pas attaquer
         setTimeout(() => {
           this.units.forEach(this.units.fight());
         }, (this.divinity.timeFactor * Math.random() * 4000) + 2000);
@@ -134,14 +133,11 @@ class City {
   clearDeadUnits() {
     this.units = this.units.filter(this.units.isDead === false);
   }
-
-  healunits() {
-    this.units.forEach(/* Dépenser du corn pour soigner les troupes */);
-  }
   // - - - - - - - - - - D E L E T E C I T Y - - - - - - - - - - - - - - - - -
 
   deleteCity() {
     clearInterval(this.cityInterval_);
+    this.divinity.endWorld();
   }
 }
 module.exports = {City};

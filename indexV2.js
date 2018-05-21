@@ -15,6 +15,7 @@ const game = async (city1) => {
     console.log(' \t--> 3 : Buy new units ');
     console.log(' \t--> 4 : Build some church for god sake ');
     console.log(' \t--> 5 : THIS IS WAR (but that doesn\'t work yet)');
+    console.log(' \t--> 6 : End the world');
 
     await prompt('What is your choice ? : ').then(
       async answer => {
@@ -65,8 +66,7 @@ const game = async (city1) => {
               });
             break;
           case '5':
-            console.log(`Get ready cause this is war !`); // TODO Qu'es ce que
-            // L'utilisateur rentre ?
+            console.log(`Get ready cause this is war !`);
             prompt('\n -->').then(
               async answer2 => {
                 console.log(`Hello there`);
@@ -74,15 +74,17 @@ const game = async (city1) => {
                 return confirm('\n');
               });
             break;
+          case '6':
+            console.log(`This is the end`);
+            city1.deleteCity();
+            break;
           default:
-            console.log(' Wrong choice, earth collapsed');
+            console.log('Wrong choice, earth collapsed');
         }
         return confirm('');
       }
     );
-
   }
-
 };
 
 const main = async() => {
