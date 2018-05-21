@@ -55,10 +55,10 @@ If you are lucky enough your traders will always come back home, but sometimes
 things get complicated
 
 
-<h3>Code style [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)          </h3>
+<h3>Code style </h3>
 
-In this project we've used a linter called XO. It checks if the code is 
-correctly indented and is perfectly readable. 
+In this project we've used a linter called XO.[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo) 
+It checks if the code is correctly indented and is perfectly readable. 
 
 You can check it by yourself using the following command in the terminal : 
 
@@ -68,6 +68,6 @@ xo
 
 <h3>Dev team</h3>
 
-* Alexandre Cruel   Branleur 1
-* Raphaël Champeaud     Branleur 2 <3
+* Alexandre Cruel
+* Raphaël Champeaud  
 * Baptiste Chevallier
